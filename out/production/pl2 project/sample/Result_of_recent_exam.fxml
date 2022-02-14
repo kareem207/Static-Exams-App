@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Result_of_recent_exam_controller">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-border-color: linear-gradient(to right, #ffb75e, #ed8f03);" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="29.0" layoutY="219.0" text="Grade :">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="grade" layoutX="129.0" layoutY="219.0" text="...">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="backtomain" layoutX="116.0" layoutY="322.0" mnemonicParsing="false" onAction="#tomain" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: linear-gradient(to right, #ffb75e, #ed8f03); -fx-background-radius: 30;" text="Back to Main Page" textFill="WHITE" />
+            <Button fx:id="takeAnotherExam" layoutX="369.0" layoutY="322.0" mnemonicParsing="false" onAction="#tosubject" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: linear-gradient(to right, #ffb75e, #ed8f03); -fx-background-radius: 30;" text="Take Another Exam" textFill="WHITE" />
+            <AnchorPane layoutX="-6.0" prefHeight="99.0" prefWidth="653.0" style="-fx-background-color: linear-gradient(to right, #ffb75e, #ed8f03);">
+               <children>
+                  <Label layoutX="294.0" layoutY="32.0" text="Result" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="161.0" layoutY="219.0" text="/10">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="154.0" text="Course Name:">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="namecourse" layoutX="222.0" layoutY="154.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
